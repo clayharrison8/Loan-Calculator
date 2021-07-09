@@ -1,0 +1,71 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #D0D0D0;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+#loanPayment {
+	visibility:hidden;
+}
+
+body{
+  font-family: arial;
+  background:#F8F8F8;
+  margin: 0 auto 0 auto;  
+  text-align:center;
+  margin: 20px;   
+}
+
+input[type=button] {
+	margin: 8px;
+   background-color: black; 
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size:1em;
+}
+
+
+#loanForm{
+  background:white;
+  width:300px;
+  margin: 0 auto 0 auto;
+  padding-bottom:20px;
+  border: black 4px solid; 
+}
+
+input {
+background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  color:black;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+}
+#loanAmount, #annualInterestRate{
+  width:250px;
+}
+
+#loanPeriod {
+  width:150px;
+}
+
+select {
+	background-color: black;
+color: white;
+  padding: 8px;
+  width:100px;
+  font-size:1em;
+  border-radius:4px;
+
+}

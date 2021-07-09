@@ -1,0 +1,30 @@
+<head>
+	  <link rel="stylesheet" href="loan.css">
+	  <script src="loan.js"></script>
+</head>
+<title> Loan Calculator </title>
+<form id="loanForm">
+    <h1>Loan Calculator</h1>
+  <input id="loanAmount" name="loanAmount" placeholder="Loan Amount"><br><br>
+  <input id="annualInterestRate" name="annualInterestRate" placeholder="Annual Interest Rate" required="true"><br><br>
+  <input id="loanPeriod" name="loanPeriod" placeholder="Loan Period" required>
+  <select name="periodValue" id="periodValue">
+    <option value="months">Months</option>
+    <option value="years">Years</option>
+  </select><br><br>
+  <input type="button" value="Calculate" onclick="validateForm(document.getElementById('loanAmount').value, document.getElementById('annualInterestRate').value,document.getElementById('loanPeriod').value,document.getElementById('periodValue').value )">
+</form>
+
+<div id="loanPayment">
+<table id="loanTable">
+  <h1>This is your Loan Repayment Plan</h1>
+  <tr>
+    <th>Payment No</td>
+    <th>Payment Amount</td>
+    <th>Principal Amount Paid</td>
+    <th>Interest Amount Paid</td>
+    <th>Loan Outstanding Balance</td>
+  </tr>
+</table>
+ <input type="button" value="Back" onclick="showHide()">
+</div>
